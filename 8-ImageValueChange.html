@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Changing Image Source on Click</title>
+</head>
+<body>
+
+<img id="image" src="https://images.unsplash.com/photo-1624258012851-c59960784150?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c21pbGV5JTIwZmFjZXxlbnwwfHwwfHx8MA%3D%3" alt="picture of smile emoji">
+<button id="change_button">Change Image to Mountain</button>
+
+<script>
+  const imageElement = document.getElementById("image");
+  const button = document.getElementById("change_button");
+
+  button.addEventListener("click", function() {
+    imageElement.src = "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW91bnRhaW58ZW58MHx8MHx8fDA%3D%22"; // Replace with your desired mountain image URL
+  });
+</script>
+
+</body>
+</html>

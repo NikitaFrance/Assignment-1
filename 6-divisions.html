@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All divs with tutorial</title>
+</head>
+<body>
+    <body>
+        <div class="tutorial">
+          <p>PHP</p>
+        </div>
+        <div><p>Java</p></div>
+        <div class="tutorial">
+          <p>Python</p>
+        </div>
+        <button id="btn1">Click to see the effect</button>
+        
+        <script>
+          const button = document.getElementById("btn1");
+        
+          button.addEventListener("click", function() {
+            // Select all divs with the class "tutorial"
+            const tutorialDivs = document.querySelectorAll(".tutorial");
+        
+            // Loop through each div and set its background color
+            for (const div of tutorialDivs) {
+              div.style.backgroundColor = "yellow";
+            }
+          });
+        </script>
+</body>
+</html>

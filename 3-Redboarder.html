@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adding Border on Click</title>
+</head>
+<body>
+  <textarea>HTML& CSS gives us structure and style</textarea>
+  <textarea>JavaScript brings our webpage to life!!</textarea>
+  <p>jQuery</p>
+  <p>JavaScript</p>
+  <button id="button1">Click to check the effect</button>
+
+  <script>
+    document.getElementById("button1").addEventListener("click", function() {
+      // Select all textarea's and paragraphs
+      const textarea = document.querySelectorAll("textarea");
+      const paragraphs = document.querySelectorAll("p");
+
+      // Apply border styles to all textarea's and paragraphs
+      [...textarea, ...paragraphs].forEach(element => {
+        element.style.border = "2px solid red";
+      });
+    });
+  </script>
+</body>

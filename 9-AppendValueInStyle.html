@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function to append the values in the style element</title>
+    <style>
+        body {
+          background-color: yellow;
+          color: red;
+          font-size: 15px;
+        }
+        </style>
+</head>
+<body>
+    <p>Click the button to display the style properties of this document.</p>
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+<script>
+  function myFunction() {
+    let x = document.getElementsByTagName("STYLE")[0];
+    // Get the styles and format them for better readability
+    let styles = x.innerHTML.replace(/\n/g, "<br>"); // Replace newlines with HTML line breaks
+
+    // Select the paragraph and append the styles
+    const demoParagraph = document.getElementById("demo");
+    demoParagraph.innerHTML += "<br><b>Styles:</b><br>" + styles;
+  }
+</script>
+</body>
+</html>

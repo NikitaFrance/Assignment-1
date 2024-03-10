@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> OnClick event to remove the paragraph with an id</title>
+</head>
+<body>
+    <p id="demo">Click the button, and this paragraph will be removed from the DOM.</p>
+    <button onclick="myFunction()">Remove paragraph</button>
+    <script>
+        function myFunction() {
+  const paragraphToRemove = document.getElementById("demo");
+  paragraphToRemove.remove();
+           }
+    </script> 
+</body>
+</html>

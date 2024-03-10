@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p>PHP</p>
+<p>Java</p>
+<p id="target_paragraph">Python</p>
+<button id="change_button">Change Color</button>
+
+<script>
+  const button = document.getElementById("change_button");
+  const targetParagraph = document.getElementById("target_paragraph");
+
+  button.addEventListener("click", function() {
+    // Set new colors
+    targetParagraph.style.color = "red";
+    targetParagraph.style.backgroundColor = "yellow";
+  });
+</script>
+</body>
+</html>
